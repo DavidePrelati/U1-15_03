@@ -368,17 +368,17 @@ console.log(searchByTitle("the"))
 */
 const searchAndDivide = (searchString) => {
   const match = searchByTitle(searchString)
-  const unmatch = movies.filter(movie => !movie.Title.toLowerCase().includes(searchString.toLowerCase()));
+  const unmatch = movies.filter(movie => !movie.Title.toLowerCase().includes(searchString.toLowerCase()))
 
-  return { match, unmatch };
+  return { match, unmatch }
 }
 console.log(searchAndDivide("the"))
 /* ESERCIZIO 19
   Scrivi una funzione chiamata "removeIndex" che riceve un numero come parametro e ritorna l'array "movies" fornito privo dell'elemento nella posizione ricevuta come parametro.
 */
 const removeIndex = (index) => {
-  movies.splice(index, 3);
-  return movies;
+  movies.splice(index, 3)
+  return movies
 }
 console.log(removeIndex(3))
 
@@ -429,14 +429,14 @@ redBackground()
   Scrivi una funzione per aggiungere un nuovo elemento alla lista non ordinata con id "myList".
 */
 const newItemList = (itemText) => {
-  const newItem = document.createElement("li");
+  const newItem = document.createElement("li")
   newItem.innerText = "sono un nuovo elemento della lista non ordinata"
 
-  const list = document.getElementById("myList");
+  const list = document.getElementById("myList")
 
-  list.appendChild(newItem);
+  list.appendChild(newItem)
 }
-newItemList();
+newItemList()
 /* ESERCIZIO 25
   Scrivi una funzione per svuotare la lista non ordinata con id "myList".
 */
@@ -458,7 +458,7 @@ const addClassToTrElements = () => {
     trElements[i].classList.add("test")
   }
 }
-addClassToTrElements();
+addClassToTrElements()
 // [EXTRA] JS Avanzato
 
 /* ESERCIZIO 27
